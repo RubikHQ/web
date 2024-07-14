@@ -34,47 +34,38 @@
 
   <!-- ======= Top Bar ======= -->
   
-  <nav class="navbar navbar-dark bg-dark fixed-top" >
-    <div class="container-fluid" id="up">
-      <a class="navbar-brand" href="../index.html" style="font-size: 30px;">Luxury F E R P I N , S . A . D E C. V .  </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Luxury F E R P I N , S . A . D E C. V . </h5>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#hero">inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">acerca de</a>
-            </li>
-            <li class="nav-item">
-              <a href="#why-us" class="nav-link"> ideales / principios</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                servicios
-              </a>
-              <ul class="dropdown-menu dropdown-menu-dark">
-                <li><a class="dropdown-item" href="../section_conta/conta.html">Contabilidad</a></li>
-                <li><a class="dropdown-item" href="#">Topografia</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#Contact">Contanctanos</a></li>
-              </ul>
-            </li>
-          </ul>
-        
-        </div>
-      </div>
-    </div>
-  </nav>
+  <header class="header">
+    <h1 class="h1">
+        <a href="../index.html" class="a">Luxury F E R P I N , S . A . D E C. V .</a>
+    </h1>
+
+    <button class="button">
+      <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+        </svg>
+    </button>
+
+    <nav class="nav">
+        <ul class="ul">
+            <li class="li"><a href="#hero" class="a">Inicio</a></li>
+            <li class="li"><a href="#about" class="a">Topografia Para Nosotros</a></li>
+            <li class="li"><a href="#why-us" class="a">Servicios a ofrecer</a></li>
+            <li class="li"><a href="#specials" class="a">Nuestros Servicios</a></li>
+            <li class="li"><a href="#" class="a">Topografia</a></li>
+            <li class="li"><a href="../section_conta/conta.html" class="a">Contabilidad</a></li>
+            <li class="li"><a href="#Contact" class="a">Contactanos</a></li>
+        </ul>
+    </nav>
+</header>
+
+<script>
+  const button = document.querySelector('.button')
+const nav    = document.querySelector('.nav')
+
+button.addEventListener('click',()=>{
+    nav.classList.toggle('activo')
+})
+</script>
 
   <!-- ======= Header ======= -->
 
