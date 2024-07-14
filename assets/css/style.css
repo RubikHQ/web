@@ -1944,10 +1944,6 @@ body {
   
   color:white;
 }
-.header .h1{
-  /* background-color: aqua; */
-}
-.header .a{}
 
 .header .button{
   /* background-color: crimson; */
@@ -1958,10 +1954,7 @@ body {
   height:2em;
   fill:white;
 }
-.header .nav{
-  /* background-color: bisque; */
-  
-}
+
 .header .ul{
   display: flex;
   flex-flow: row nowrap;
